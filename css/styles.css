@@ -80,12 +80,12 @@ p { margin: 0 0 1em; }
   display: inline-flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 52px; padding: 0 28px; border-radius: 999px; border: 2px solid transparent;
   font-family: var(--f-titulo); font-size: 1.15rem; text-decoration: none; cursor: pointer;
-  transition: transform .15s ease, background-color .15s ease, box-shadow .15s ease;
+  transition: transform .15s ease, background-color .2s ease, color .2s ease, border-color .2s ease, box-shadow .15s ease;
 }
 .btn:hover { transform: translateY(-2px); box-shadow: var(--sombra); }
 .btn:active { transform: translateY(0); }
 .btn--primario { background: var(--marron); color: var(--crema); }
-.btn--primario:hover { background: #5c3618; }
+.btn--primario:hover, .btn--primario:focus-visible { background: var(--crema); color: var(--marron); border-color: var(--marron); }
 .btn--secundario { background: var(--blanco); color: var(--marron); border-color: var(--marron); }
 .btn--claro { background: var(--crema); color: var(--marron); }
 .btn--grande { min-height: 64px; padding: 0 36px; font-size: 1.3rem; }
