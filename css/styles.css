@@ -109,7 +109,6 @@ p { margin: 0 0 1em; }
 .hero__tarrina { position: absolute; height: auto; pointer-events: none; filter: drop-shadow(0 14px 20px rgba(39, 34, 24, .22)); animation: flotar 5s ease-in-out infinite; }
 .hero__tarrina--1 { width: 150px; right: 3%; top: 32px; --giro: 10deg; }
 .hero__tarrina--2 { width: 105px; left: 47%; bottom: 28px; --giro: -9deg; animation-delay: -1.8s; animation-duration: 5.6s; }
-.hero__tarrina--3 { width: 72px; right: 37%; top: 26px; --giro: 7deg; animation-delay: -3.4s; animation-duration: 4.6s; }
 @keyframes flotar {
   0%, 100% { transform: translateY(0) rotate(var(--giro)); }
   50% { transform: translateY(-12px) rotate(calc(var(--giro) * -0.4)); }
@@ -281,8 +280,7 @@ p { margin: 0 0 1em; }
   .hero__tarrina { z-index: 2; }
   .hero__tarrina--1 { width: 64px; right: -6px; top: auto; bottom: 150px; }
   .hero__tarrina--2 { width: 56px; left: -4px; bottom: 360px; }
-  .hero__tarrina--3 { display: none; }
-
+  
   .beneficios { grid-template-columns: 1fr; gap: 12px; }
   .beneficio { display: grid; grid-template-columns: 56px 1fr; column-gap: 16px; align-items: center; padding: 16px 18px; border-radius: 20px; }
   .beneficio__icono { width: 52px; height: 52px; margin: 0; grid-row: span 2; }
