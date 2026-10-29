@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar · Mi llaollao</title>
+  <meta name="description" content="Accede a tu cuenta de Mi llaollao para ver tus puntos, tickets y ofertas.">
+  <meta name="theme-color" content="#A0C823">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <!-- 00 · Header -->
+  <header class="header">
+    <div class="contenedor header__inner">
+      <a class="header__logo" href="index.html" aria-label="Mi llaollao, inicio">
+        <img src="img/logo-llaollao.svg" alt="llaollao" width="118" height="30">
+      </a>
+      <nav class="header__acciones" aria-label="Cuenta">
+        <a class="header__entrar" href="entrar.html">Entrar</a>
+        <a class="btn btn--primario btn--sm" href="index.html#registro">Crear mi cuenta</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" class="pagina">
+    <section class="seccion seccion--beige">
+      <div class="contenedor caja">
+        <h1 class="centrado">Hola de nuevo</h1>
+        <p class="subtitulo centrado">Entra en Mi llaollao para ver tus puntos, tickets y ofertas.</p>
+        <div class="tarjeta-form">
+          <div class="social">
+            <button class="btn btn--secundario btn--bloque" type="button" data-social="google"><img src="img/icono-google.png" alt="" width="20" height="20">Continuar con Google</button>
+            <button class="btn btn--secundario btn--bloque" type="button" data-social="apple"><img src="img/icono-apple.png" alt="" width="20" height="20">Continuar con Apple</button>
+          </div>
+          <p class="separador">o con tu email</p>
+          <form data-formulario="entrar" novalidate>
+            <div class="campo">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tu@email.com" data-validar="email" aria-describedby="error-email" required>
+              <p class="mensaje-error" id="error-email" role="alert"></p>
+            </div>
+            <div class="campo">
+              <label for="password">Contraseña</label>
+              <div class="pass">
+                <input id="password" name="password" type="password" autocomplete="current-password" placeholder="Tu contraseña" data-validar="clave" aria-describedby="error-password" required>
+                <button class="pass__ver" type="button" aria-controls="password" aria-pressed="false">Ver</button>
+              </div>
+              <p class="mensaje-error" id="error-password" role="alert"></p>
+            </div>
+            <button class="btn btn--primario btn--bloque btn--grande" type="submit">Entrar</button>
+            <p class="form-nota"><a href="#">¿Has olvidado tu contraseña?</a></p>
+          </form>
+        </div>
+        <p class="centrado" style="margin-top:24px">¿Aún no tienes cuenta? <a href="index.html#registro"><strong>Créala gratis</strong></a></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- 09 · Footer -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="footer__grid">
+        <div>
+          <a class="footer__logo" href="index.html"><img src="img/logo-llaollao.svg" alt="llaollao" width="134" height="34"></a>
+          <p class="claim">More Feeling, More Flavor</p>
+        </div>
+        <div>
+          <h3>Legal</h3>
+          <ul>
+            <li><a href="aviso-legal.html">Aviso legal</a></li>
+            <li><a href="privacidad.html">Privacidad</a></li>
+            <li><a href="cookies.html">Cookies</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="#">Atención al cliente</a></li>
+            <li><a href="#">Franquicias</a></li>
+            <li><a href="#">Trabaja con nosotros</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Síguenos</h3>
+          <div class="redes">
+            <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="TikTok">TT</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="YouTube">YT</a>
+          </div>
+          <div class="tiendas-app"><a href="#">App Store</a><a href="#">Google Play</a></div>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span>© <span data-anio>2026</span> llaollao. Todos los derechos reservados.</span>
+        <span>Proyecto académico (ESIC). No es una web oficial de llaollao.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+  <script src="js/formulario.js" defer></script>
+</body>
+</html>
