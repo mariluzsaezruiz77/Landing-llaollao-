@@ -106,7 +106,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Hero ---------- */
 .hero { background: var(--verde); position: relative; overflow: hidden; }
-.hero__tarrina { position: absolute; bottom: 0; height: auto; pointer-events: none; filter: drop-shadow(0 -6px 24px rgba(39, 34, 24, .12)); transform-origin: 50% 100%; animation: balanceo 4.5s ease-in-out infinite; }
+.hero__tarrina { position: absolute; bottom: -14px; height: auto; pointer-events: none; filter: drop-shadow(0 -6px 24px rgba(39, 34, 24, .12)); transform-origin: 50% 100%; animation: balanceo 4.5s ease-in-out infinite; }
 .hero__tarrina--2 { animation-delay: -2.2s; animation-duration: 5.2s; }
 @keyframes balanceo {
   0%, 100% { transform: translateY(6px) rotate(-3deg); }
