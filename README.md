@@ -27,4 +27,5 @@ img/                Logotipo, pantallas de la app, avatares e iconos
 ## Notas
 
 - Paleta y tipografías según el brandbook de llaollao. ITC Souvenir (de pago) se sustituye por Fraunces.
+- Iconos de redes sociales y tiendas de apps: Font Awesome Free 6.5.2 (licencia en css/fontawesome/LICENSE.txt).
 - El formulario valida en tiempo real pero no envía datos: simula el alta y lleva a `bienvenida.html`.
