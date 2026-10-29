@@ -220,7 +220,7 @@ p { margin: 0 0 1em; }
 
 /* ---------- Footer ---------- */
 .footer { background: var(--marron); color: var(--crema); padding-block: 56px 28px; }
-.footer__grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 32px; }
+.footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 32px; }
 .footer__logo img { height: 34px; width: auto; margin-bottom: 16px; }
 .footer h3 { font-size: 1.1rem; margin-bottom: 12px; }
 .footer ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
@@ -233,7 +233,8 @@ p { margin: 0 0 1em; }
 .tiendas-app { display: grid; gap: 10px; margin-top: 16px; }
 .tiendas-app a { background: var(--oscuro); border-radius: 12px; padding: 10px 16px; font-family: var(--f-ui); font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; }
 .tiendas-app i { font-size: 1.3rem; }
-.footer__legal { border-top: 1px solid rgba(250, 245, 240, .2); margin-top: 40px; padding-top: 20px; font-size: .85rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
+.footer__legal { border-top: 1px solid rgba(250, 245, 240, .2); margin-top: 40px; padding-top: 20px; font-size: .85rem; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; }
+.footer__enlaces { display: flex; flex-wrap: wrap; gap: 6px 20px; }
 
 /* ---------- CTA flotante (móvil) ---------- */
 .cta-flotante {
@@ -263,6 +264,7 @@ p { margin: 0 0 1em; }
   .beneficios { grid-template-columns: repeat(2, 1fr); }
   .registro { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
+  .footer__grid > div:first-child { grid-column: 1 / -1; }
 }
 
 @media (max-width: 760px) {
